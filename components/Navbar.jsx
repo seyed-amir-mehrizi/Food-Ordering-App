@@ -14,8 +14,25 @@ function Navbar() {
 
       </div>
       </div>
-      <div className={styles.item}>center</div>
-      <div className={styles.item}>right</div>
+      <div className={styles.item}>
+        <ul className={styles.list}>
+          <li className={styles.listItem}>Home Page</li>
+          <li className={styles.listItem}>Products</li>
+          <li className={styles.listItem}>Menu</li>
+          <Image src='/img/logo.png'  width='160px' height='69px'/>
+          <li className={styles.listItem}>Events</li>
+          <li className={styles.listItem}>Blog</li>
+          <li className={styles.listItem}>Contact</li>
+        </ul>
+      </div>
+      <div className={styles.item}>
+        <div className={styles.cart}>
+        <Image src='/img/cart.png'  width='30px' height='30px'/>
+          <div className={styles.counter}>
+            2
+          </div>
+        </div>
+      </div>
 
     </div>
   )
